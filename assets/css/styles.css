@@ -5,7 +5,7 @@
 }
 
 .bg-img {
-    background: linear-gradient(to bottom, rgba(15, 35, 65, 0), rgba(25, 55, 95, 1)), url('/assets/images/sdg-login-bg-banner.jpg');
+    background: linear-gradient(to bottom, rgba(15, 35, 65, 0), rgb(8, 77, 167, 1)), url('/assets/images/sdg-login-bg-banner.jpg');
     background-position: center;
     background-size: cover;
 }
