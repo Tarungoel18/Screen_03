@@ -28,7 +28,9 @@
 }
 
 .text-four {
-    color: navy;
+    color: #1C4D8D;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .logo-box {
@@ -68,6 +70,8 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 999;
+    position: relative;
 }
 
 .width-40 {
@@ -83,4 +87,94 @@
     border-bottom-left-radius: -20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.bg-navy {
+    background-color: #001a29;
+}
+
+.trans-1 {
+    height: 40%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.trans-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: .5;
+}
+
+.trans-2 {
+    height: 40%;
+    width: 40%;
+    transform: translate(50%, 50%);
+}
+
+.trans-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: .5;
+}
+
+.spinner-1 {
+    height: 85%;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.spinner-2 {
+    height: 55%;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.min-h-50 {
+    min-height: 35vh;
+}
+
+.spinner-3 {
+    height: 35%;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-4 {
+    height: 21%;
+    width: 21%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-logo {
+    height: 9%;
+    width: 9%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spnner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.margin-left {
+    margin-left: -10px;
 }
