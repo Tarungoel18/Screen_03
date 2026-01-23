@@ -12,19 +12,19 @@
 
 .text-first {
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .text-second {
     color: gold;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .text-third {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .text-four {
@@ -83,8 +83,6 @@
 }
 
 .border-rad-cir {
-    border-top-left-radius: -20px;
-    border-bottom-left-radius: -20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -104,6 +102,10 @@
     height: 100%;
     object-fit: contain;
     opacity: .5;
+    animation-name: rotate-clockwise;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .trans-2 {
@@ -117,28 +119,47 @@
     height: 100%;
     object-fit: contain;
     opacity: .5;
+    animation-name: rotate-clockwise;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .spinner-1 {
     height: 85%;
     width: 85%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.spinner-1 img {
+    animation-name: rotate-clockwise;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .spinner img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .spinner-2 {
     height: 55%;
     width: 55%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.spinner-2 img {
+    animation-name: rotate-anticlockwise;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .min-h-50 {
@@ -148,33 +169,74 @@
 .spinner-3 {
     height: 35%;
     width: 35%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.spinner-3 img {
+    animation-name: rotate-clockwise;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .spinner-4 {
     height: 21%;
     width: 21%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.spinner-4 img {
+    animation-name: rotate-anticlockwise;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .spinner-logo {
-    height: 9%;
-    width: 9%;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 9%;
+    height: 9%;
 }
 
 .spnner-logo img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .margin-left {
     margin-left: -10px;
+}
+
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-anticlockwise {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-height: 1000px) and (max-width:780px) {
+    .spinner-logo {
+        height: 6%;
+        width: 6%;
+    }
+}
+
+@media (min-height: 600px) and (min-width:1800px) {
+    .spinner-logo {
+        height: 6%;
+        width: 6%;
+    }
 }
