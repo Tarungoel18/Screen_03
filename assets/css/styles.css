@@ -163,7 +163,7 @@
 }
 
 .min-h-50 {
-    min-height: 35vh;
+    min-height: 350px;
 }
 
 .spinner-3 {
@@ -207,6 +207,10 @@
 
 .margin-left {
     margin-left: -10px;
+}
+
+.content-wrap {
+  max-width: 600px;
 }
 
 @keyframes rotate-clockwise {
