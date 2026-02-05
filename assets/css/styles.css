@@ -133,7 +133,10 @@
     transform: translate(-50%, -50%);
 }
 
-.spinner-1 { width: 480px; height: 480px; }
+.spinner-1 {
+    width: 480px;
+    height: 480px;
+}
 
 
 .spinner-1 img {
@@ -149,7 +152,10 @@
     object-fit: contain;
 }
 
-.spinner-2 { width: 315px; height: 315px; }
+.spinner-2 {
+    width: 315px;
+    height: 315px;
+}
 
 
 .spinner-2 img {
@@ -163,7 +169,10 @@
     min-height: 450px;
 }
 
-.spinner-3 { width: 202px; height: 202px; }
+.spinner-3 {
+    width: 202px;
+    height: 202px;
+}
 
 
 .spinner-3 img {
@@ -173,7 +182,10 @@
     animation-iteration-count: infinite;
 }
 
-.spinner-4 { width: 125px; height: 125px; }
+.spinner-4 {
+    width: 125px;
+    height: 125px;
+}
 
 
 .spinner-4 img {
@@ -183,7 +195,10 @@
     animation-iteration-count: infinite;
 }
 
-.spinner-logo { width: 70px; height: 70px; }
+.spinner-logo {
+    width: 70px;
+    height: 70px;
+}
 
 
 .spinner-logo img {
@@ -197,13 +212,14 @@
 }
 
 .content-wrap {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 @keyframes rotate-clockwise {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -213,25 +229,62 @@
     0% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
 }
 
 @media (max-width: 992px) {
-    .spinner-1 { width: 370px; height: 370px; }
-    .spinner-2 { width: 240px; height: 240px; }
-    .spinner-3 { width: 150px; height: 150px; }
-    .spinner-4 { width: 90px; height: 90px; }
+    .spinner-1 {
+        width: 370px;
+        height: 370px;
+    }
 
-    .spinner-logo { width: 50px; height: 50px; }
+    .spinner-2 {
+        width: 240px;
+        height: 240px;
+    }
+
+    .spinner-3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .spinner-4 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .spinner-logo {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 576px) {
-    .spinner-1 { width: 300px; height: 300px; }
-    .spinner-2 { width: 195px; height: 195px; }
-    .spinner-3 { width: 125px; height: 125px; }
-    .spinner-4 { width: 75px; height: 75px; }
+    .spinner-1 {
+        width: 300px;
+        height: 300px;
+    }
 
-    .spinner-logo { width: 42px; height: 42px; }
+    .spinner-2 {
+        width: 195px;
+        height: 195px;
+    }
+
+    .spinner-3 {
+        width: 125px;
+        height: 125px;
+    }
+
+    .spinner-4 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .spinner-logo {
+        width: 42px;
+        height: 42px;
+    }
 }
